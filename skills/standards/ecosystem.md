@@ -187,6 +187,20 @@ Comprehensive TypeScript SDK for OpenZeppelin Smart Accounts on Stellar.
   - Built-in indexer for contract discovery
   - Multiple signer types (passkeys, Ed25519, policies)
 
+#### Cavos
+Embedded self-custodial wallet SDK. A device-bound P-256 key never leaves the device; an encrypted ed25519 control seed is sealed into the account's on-chain data entries (`cv:ct`) and signs classic `G…` transactions.
+- **Website**: https://cavos.xyz
+- **Docs**: https://docs.cavos.xyz
+- **llms.txt**: https://docs.cavos.xyz/llms-full.txt
+- **Demo**: https://demo.cavos.xyz
+- **GitHub**: https://github.com/cavos-labs/kit
+- **Use Case**: In-app wallets with social login
+- **Features**:
+  - Classic Stellar `G…` account (can invoke Soroban contracts)
+  - Passkeys enroll devices; they do not sign transactions
+  - Optional AWS Nitro enclave recovery: users get a new device by signing in again; the enclave cannot move funds
+  - Optional pass-through gas sponsorship
+
 #### Passkey Kit
 TypeScript SDK for passkey-based smart wallets. Sibling to Smart Account Kit, with a different authorization model — the two are not drop-in compatible.
 - **GitHub**: https://github.com/stellar/passkey-kit
