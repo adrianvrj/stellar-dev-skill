@@ -188,7 +188,7 @@ Comprehensive TypeScript SDK for OpenZeppelin Smart Accounts on Stellar.
   - Multiple signer types (passkeys, Ed25519, policies)
 
 #### Cavos
-Embedded self-custodial wallet SDK. The P-256 unwrap key is local: non-extractable in the browser, secure-storage bytes on Node and React Native. An encrypted ed25519 control seed is sealed into the account's on-chain data entries (`cv:ct`) and signs classic `G…` transactions.
+Embedded self-custodial wallet SDK. The P-256 unwrap key is local: non-extractable in the browser and on React Native (OS keystore); on Node you supply the key and persist the raw scalar yourself. An encrypted ed25519 control seed is sealed into the account's on-chain data entries (`cv:ct`) and signs classic `G…` transactions.
 - **Website**: https://cavos.xyz
 - **Docs**: https://docs.cavos.xyz — [llms.txt](https://docs.cavos.xyz/llms.txt) and full corpus [llms-full.txt](https://docs.cavos.xyz/llms-full.txt)
 - **Demo**: https://demo.cavos.xyz
